@@ -14,7 +14,31 @@
 
 <form method="post">			<!-- フォーム領域の開始地点　かつフォームに入力された内容をサーバーへ送信する指定 -->
     名前：<input type="text" name="name" placeholder="鈴木太郎"><br><br>			<!-- 1行のテキストの入力欄作成　placeholderで初期値を薄く例示 -->
-    年齢：<input type="number" name="age" min="0" max="17"><br><br>				<!-- 1行の数値の入力欄作成 児童の年齢なので0～17までに -->
+	
+	<label for="age">年齢を選択してください:</label>
+
+	<select name="age" id="age">			<!-- 以下のオプションから年齢を選ぶコンボボックスを作り始めるというもの -->
+		<option value="">-- 選択してください --</option>
+		<option value="0">0歳</option>
+		<option value="1">1歳</option>
+		<option value="2">2歳</option>
+		<option value="3">3歳</option>
+		<option value="4">4歳</option>
+		<option value="5">5歳</option>
+		<option value="6">6歳</option>
+		<option value="7">7歳</option>
+		<option value="8">8歳</option>
+		<option value="9">9歳</option>
+		<option value="10">10歳</option>
+		<option value="11">11歳</option>
+		<option value="12">12歳</option>
+		<option value="13">13歳</option>
+		<option value="14">14歳</option>
+		<option value="15">15歳</option>
+		<option value="16">16歳</option>
+		<option value="17">17歳</option>
+	</select>
+	
     <input type="submit" value="送信">				<!-- フォームに入力した内容を送信するボタン作成 -->
 	
 </form>			<!-- フォーム領域の終了地点 -->
@@ -34,4 +58,5 @@
 </body>		<!-- ユーザーが目にする範囲の領域の終わり -->
 
 </html>		<!-- HTMLの終わりの宣言 -->
+
 
